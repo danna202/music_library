@@ -3,9 +3,7 @@ import { useState } from 'react'
 const SearchBar = ({ handleSearch, handleClear }) => {
     const [term, setTerm] = useState('');
   
-    // const handleChange = (e) => {
-    //   setTerm(e.target.value);
-    // };
+   
     const handleChange = (e) => {
       const searchTerm = e.target.value;
       setTerm(searchTerm);

@@ -11,6 +11,8 @@ import { Fragment } from 'react';
 
 
 
+
+
 function App() {
 	let [search, setSearch] = useState('')
 	let [message, setMessage] = useState('Search for Music!')
@@ -19,17 +21,9 @@ function App() {
 
 	const API_URL = 'https://itunes.apple.com/search?term='
 
+	 
 
-// const fetchData = async (term) => {
-//     document.title = `${term} Music`;
-//     const response = await fetch(API_URL + term);
-//     const resData = await response.json();
-//     if (resData.results.length > 0) {
-//       setData(resData.results);
-//     } else {
-//       setMessage('Not Found');
-//     }
-//   };
+
 
 useEffect(() => {
 	if(search) {
@@ -81,16 +75,4 @@ return (
 }
 
 export default App;
-    //   {/* <SearchContext.Provider value={{
-    //     term: search,
-    //     handleSearch: handleSearch
-    //   }}> */}
-    //     {/* <SearchBar handleSearch={handleSearch} handleClear={handleClear} term={search} /> */}
-    //   {/* </SearchContext.Provider>
-    //   {message}
-    //   <DataContext.Provider value={data}>
-    //     <Gallery data={data} />
-	// 	<AlbumView />
-	// 	<ArtistView />
-    //   </DataContext.Provider> */}
     
